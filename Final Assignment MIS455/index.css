@@ -1,0 +1,100 @@
+body{
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: burlywood;
+}
+.countryStyle {
+    margin: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+.countryStyle img {
+    margin-top: 20px;
+}
+.countryStyle a {
+    text-decoration: none;
+}
+
+
+.search{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+}
+.search input{
+    padding: 5px 10px;
+    border: none;
+}
+.search button{
+    background: #000;
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+}
+.search button:hover{
+    /* background: burlywood; */
+    color: white;
+    cursor: pointer;
+}
+#container{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    justify-content: center;
+}
+footer{
+    background: burlywood;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.countryDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-top: 40px;
+}
+.countryDetails img{
+    width: 400px;
+    margin: 20px auto;
+}
+.details{
+    width: 400px;
+    font-weight: bold;
+}
+@media screen and (max-width: 640px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 10px;
+    }
+    .countryStyle {
+        margin: 20px 0;
+        padding: 20px 0;
+        margin: 0 auto;
+    }
+    h3{
+        text-align: center;
+    }
+    .countryDetails img{
+        width: 300px;
+        margin: 20px auto;
+    }
+    .details{
+        width: 300px;
+        font-weight: bold;
+    }
+}
